@@ -82,7 +82,7 @@ resource "aws_iam_role" "best_lambda_role" {
 # The log group that will contain the lambda function logs
 resource "aws_cloudwatch_log_group" "lambda_playground_logs" {
   name              = "/aws/lambda/${local.func_name}"
-  retention_in_days = "30"
+  retention_in_days = "14"
 }
 
 # The lambda creation
