@@ -29,7 +29,7 @@ locals {
   func_name = "${var.tenant_name}_playground"
 }
 
-# Configure AWS
+# Configure AWS via external vars
 provider "aws" {
   region     = var.aws_region
   access_key = var.aws_access_key
